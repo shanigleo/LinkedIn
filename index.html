@@ -306,10 +306,10 @@ section {
     color: var(--text-secondary);
 }
 
-/* ABOUT PORTRAIT - SOFT FADE */
+/* ABOUT PORTRAIT - SOFT SIDE FADE */
 .about-portrait-fade {
     position: relative;
-    width: min(100%, 520px);
+    width: min(100%, 820px);
     margin: 0 0 3rem 0;
 }
 
@@ -321,10 +321,10 @@ section {
 
 .about-portrait-image img {
     width: 100%;
-    aspect-ratio: 4 / 5;
+    aspect-ratio: 1.45 / 1;
     height: auto;
     object-fit: cover;
-    object-position: center 34%;
+    object-position: center 50%;
     display: block;
     filter: grayscale(8%) contrast(1.03);
 }
@@ -333,7 +333,7 @@ section {
     content: '';
     position: absolute;
     inset: 0;
-    background: linear-gradient(to bottom, transparent 58%, var(--bg-primary) 100%);
+    background: linear-gradient(to right, transparent 64%, var(--bg-primary) 100%);
     pointer-events: none;
 }
 
@@ -345,7 +345,7 @@ section {
     color: rgba(255, 255, 255, 0.72);
     text-align: left;
 }
-
+        
 /* EDUCATION SECTION */
 .education-item {
     margin-bottom: 3rem;
@@ -626,26 +626,25 @@ footer {
         width: 100%;
     }
 
-    .about-portrait-fade {
-    width: 100%;
-    max-width: 100%;
-    margin: 0 0 2.5rem 0;
-}
+      .about-portrait-fade {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 0 2.5rem 0;
+    }
 
-.about-portrait-image img {
-    width: 100%;
-    aspect-ratio: 4 / 5;
-    height: auto;
-    object-position: center 32%;
-}
+    .about-portrait-image img {
+        width: 100%;
+        aspect-ratio: 3 / 4;
+        height: auto;
+        object-position: center 42%;
+    }
 
-.about-portrait-image::after {
-    background: linear-gradient(to bottom, transparent 52%, var(--bg-primary) 100%);
-}
+    .about-portrait-image::after {
+        background: linear-gradient(to bottom, transparent 52%, var(--bg-primary) 100%);
+    }
 
-.about-portrait-fade figcaption {
-    text-align: center;
-}
+    .about-portrait-fade figcaption {
+        text-align: center;
     }
 }
     </style>
@@ -688,10 +687,10 @@ footer {
 
                     <div class="about-grid reveal">
                         <div class="about-text">
-                            <figure class="about-portrait-fade">
-                                <div class="about-portrait-image">
-                                <img src="headshot-profile.jpg" alt="Shantae Gallegos">
-                        </div>
+                           <figure class="about-portrait-fade">
+                        <div class="about-portrait-image">
+                        <img src="headshot-full.jpg" alt="Shantae Gallegos">
+                    </div>
     <figcaption>Neu Research Lab • CU Boulder</figcaption>
 </figure>
 
