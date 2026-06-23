@@ -502,10 +502,23 @@ footer {
 
 @media (max-width: 768px) {
     header {
-        position: relative;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
         flex-direction: column;
         gap: 1.25rem;
         padding: 1.5rem;
+        background: var(--bg-primary);
+    }
+
+    section {
+        scroll-margin-top: 260px;
+    }
+
+    .logo {
+        font-size: 1.35rem;
+        text-align: center;
+    }
         background: var(--bg-primary);
     }
 
