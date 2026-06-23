@@ -311,33 +311,38 @@ section {
     position: relative;
     width: min(100%, 520px);
     margin: 0 0 3rem 0;
-    overflow: hidden;
 }
 
-.about-portrait-fade img {
+.about-portrait-image {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.about-portrait-image img {
     width: 100%;
     aspect-ratio: 4 / 5;
     height: auto;
     object-fit: cover;
-    object-position: center 36%;
+    object-position: center 34%;
     display: block;
     filter: grayscale(8%) contrast(1.03);
 }
 
-.about-portrait-fade::after {
+.about-portrait-image::after {
     content: '';
     position: absolute;
     inset: 0;
-    background: linear-gradient(to bottom, transparent 55%, var(--bg-primary) 100%);
+    background: linear-gradient(to bottom, transparent 58%, var(--bg-primary) 100%);
     pointer-events: none;
 }
 
 .about-portrait-fade figcaption {
-    margin-top: 0.8rem;
-    font-size: 0.7rem;
+    margin-top: 0.9rem;
+    font-size: 0.72rem;
     letter-spacing: 0.16em;
     text-transform: uppercase;
-    color: var(--text-secondary);
+    color: rgba(255, 255, 255, 0.72);
     text-align: left;
 }
 
@@ -622,30 +627,25 @@ footer {
     }
 
     .about-portrait-fade {
-        width: 100%;
-        max-width: 100%;
-        margin: 0 0 2.5rem 0;
-    }
+    width: 100%;
+    max-width: 100%;
+    margin: 0 0 2.5rem 0;
+}
 
-    .about-portrait-fade img {
-        width: 100%;
-        aspect-ratio: 4 / 5;
-        height: auto;
-        object-position: center 35%;
-    }
+.about-portrait-image img {
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    height: auto;
+    object-position: center 32%;
+}
 
-    .about-portrait-fade::after {
-        background: linear-gradient(to bottom, transparent 52%, var(--bg-primary) 100%);
-    }
+.about-portrait-image::after {
+    background: linear-gradient(to bottom, transparent 52%, var(--bg-primary) 100%);
+}
 
-    .about-portrait-fade figcaption {
-        text-align: center;
-    }
-
-    .about-stats {
-        margin-top: 3rem;
-        display: grid;
-        gap: 2rem;
+.about-portrait-fade figcaption {
+    text-align: center;
+}
     }
 }
     </style>
@@ -689,9 +689,11 @@ footer {
                     <div class="about-grid reveal">
                         <div class="about-text">
                             <figure class="about-portrait-fade">
+                                <div class="about-portrait-image">
                                 <img src="headshot-profile.jpg" alt="Shantae Gallegos">
-                                <figcaption>Neu Research Lab • CU Boulder</figcaption>
-                            </figure>
+                        </div>
+    <figcaption>Neu Research Lab • CU Boulder</figcaption>
+</figure>
 
                             <p>
                                 My path into biomedical engineering began with two interests that have always shaped the way I think: chemical engineering and medicine.
